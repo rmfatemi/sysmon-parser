@@ -3,11 +3,10 @@ import csv
 import time
 
 with open('final.csv') as csvin:
-
     data = csv.reader(csvin)
     next(data)
     hashes = set()
-    
+
     for row in data:
         hash = ''.join(row[3])
         hashes.add(hash)
